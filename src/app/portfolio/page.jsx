@@ -1,7 +1,9 @@
-export default function Home() {
+function Portfolio() {
     return (
         <div>
-            portfolio
+            Portfolio
         </div>
     )
 }
+
+export default Portfolio

@@ -1,7 +1,10 @@
-export default function Home() {
+function Contact() {
     return (
         <div>
-            contact
+            Contact
         </div>
     )
 }
+
+export default Contact
+Contact

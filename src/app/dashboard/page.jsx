@@ -1,7 +1,9 @@
-export default function Home() {
+function Dashboard() {
     return (
         <div>
-            dashboard
+            dashbord
         </div>
     )
 }
+
+export default Dashboard
