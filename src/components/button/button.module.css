@@ -1,0 +1,11 @@
+.container{
+    padding: 20px 20px;
+    border-radius: 5px;
+    background: #53c28b;
+    color: #fff;
+    width: max-content;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
