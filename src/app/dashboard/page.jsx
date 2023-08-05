@@ -1,15 +1,12 @@
-import React from 'react'
-import styles from './page.module.css'
-import useSWR from 'swr'
-
-const fetcher = (...args) => fetch(...args).then(res => res.json())
+import React from 'react';
+import styles from './page.module.css';
 
 function Dashboard() {
     return (
         <div className={styles.container}>
-            dashbord
+            dashboard
         </div>
-    )
+    );
 }
 
-export default Dashboard
+export default Dashboard;

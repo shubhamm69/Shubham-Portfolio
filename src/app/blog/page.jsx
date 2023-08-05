@@ -3,20 +3,40 @@ import styles from './page.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 
-function Blog() {
+async function getData() {
+  try {
+    const res = await fetch("http://localhost:3000/api/posts", {
+      cache: 'no-store',
+    });
+    if (!res.ok) {
+      throw new Error("Failed to load posts");
+    }
+    return res.json();
+  } catch (error) {
+    console.error(error); // Log the error for debugging purposes
+    throw error; // Rethrow the error to be caught by the caller
+  }
+}
+
+
+const Blog = async() => {
+  const data = await getData();
   return (
     <div>
-      <Link href="/blog/testId" className={styles.container}>
+      {data.map((item) => (
+
+      <Link href={`/blog/${item._id}`} className={styles.container} key={item.id}>
         <div className={styles.imgContainer}>
           <Image
             className={styles.img}
-            src="https://images.unsplash.com/photo-1690972909011-09fbbf8ab29c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="test" width={400} height={250} />
+            src={item.image} alt="test" width={400} height={250} />
         </div>
         <div className={styles.content}>
-          <h1 className={styles.title}>Test</h1>
-          <p className={styles.desc}>Desc</p>
+          <h1 className={styles.title}>{item.title}</h1>
+          <p className={styles.desc}>{item.desc}</p>
         </div> 
       </Link>
+      ))}
     </div>
   )
 }
