@@ -3,6 +3,10 @@ import styles from './page.module.css'
 import Image from 'next/image'
 import Button from '@/components/button/Button'
 
+export const metadata = {
+    title: 'Shubham | Contact page',
+    description: 'Contact me page for shubham',
+}  
 function Contact() {
     return (
         <div className={styles.container}>
@@ -23,4 +27,3 @@ function Contact() {
 }
 
 export default Contact
-Contact
