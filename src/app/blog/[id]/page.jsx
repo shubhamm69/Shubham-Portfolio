@@ -4,24 +4,25 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 async function getData(id) {
-  try {
-    const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
-      cache: "no-store",
-    });
-    if (!res.ok) {
-      throw new Error("Failed to load posts");
-    }
-    return res.json();
-  } catch (error) {
-      notFound();
+  const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
+    cache: "no-store",
+  });
+
+  if (!res.ok) {
+    return notFound()
   }
+
+  return res.json();
 }
+
+
 export async function generateMetadata({ params }) {
-  const post = await getData(params.id);
+
+  const post = await getData(params.id)
   return {
     title: post.title,
-    description: post.desc ,
-  }
+    description: post.desc,
+  };
 }
 
 const BlogPost = async ({ params }) => {
@@ -50,7 +51,7 @@ const BlogPost = async ({ params }) => {
             src={data.userimage}
             alt=""
             fill={true}
-            className={styles.image} 
+            className={styles.image}
           />
         </div>
       </div>
