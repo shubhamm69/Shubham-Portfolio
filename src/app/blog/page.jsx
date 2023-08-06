@@ -1,10 +1,11 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import styles from "./page.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
 async function getData() {
-  const res = await fetch("http://shubham19-portfolio/api/posts", {
+  const res = await fetch("http://http://shubham19-portfolio/api/posts", {
     cache: "no-store",
   });
 
@@ -15,8 +16,26 @@ async function getData() {
   return res.json();
 }
 
-const Blog = async () => {
-  const data = await getData();
+const Blog = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const blogData = await getData();
+        setData(blogData);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  if (!data || data.length === 0) {
+    return <div>No blog posts available.</div>;
+  }
+
   return (
     <div className={styles.mainContainer}>
       {data.map((item) => (
