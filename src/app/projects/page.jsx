@@ -7,13 +7,13 @@ function projects() {
         <div className={styles.container}>
             <h1 className={styles.selectTitle}>Select a project</h1>
             <div className={styles.items}>
-                <Link href="/projects/illustrations" className={styles.item} >
+                <Link href="/projects/designs" className={styles.item} >
                     <span className={styles.itemTitle}>Design</span> 
                 </Link>
                 <Link href="/projects/websites" className={styles.item} >
                     <span className={styles.itemTitle}>Web Dev</span>
                 </Link>
-                <Link href="/projects/apps" className={styles.item} >
+                <Link href="/projects/applications" className={styles.item} >
                     <span className={styles.itemTitle}>App Dev</span>
                 </Link>
             </div>
