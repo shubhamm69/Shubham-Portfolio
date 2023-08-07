@@ -17,18 +17,20 @@ This repository contains the source code for my personal portfolio site, built u
 
 Follow the steps below to get a copy of the project up and running on your local machine:
 
-1. **Prerequisites**: Ensure you have Node.js and npm installed on your system.
+1. **Prerequisites**: Ensure you have Node.js (v12 or higher) and npm installed on your system.
 
 2. **Clone the Repository**: Clone this repository to your local machine using the following command:
 
-    ```bash
-    git clone https://github.com/your-username/your-portfolio-repo.git
+    ```
+    git clone https://github.com/shubhamm69/Shubham-Portfolio
     ```
 
 3. **Install Dependencies**: Navigate to the project directory and install the required dependencies by running:
 
-    ```bash
-    cd your-portfolio-repo
+    ```
+    cd Shubham-Portfolio
+    ```
+    ```
     npm install
     ```
 

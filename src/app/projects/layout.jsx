@@ -4,7 +4,7 @@ import styles from './layout.module.css'
 function layout({ children }) {
     return (
         <div> 
-            <h1 className={styles.mainTitle}>Our Works</h1>
+            <h1 className={styles.mainTitle}>My Works</h1>
             {children}
         </div>
     )

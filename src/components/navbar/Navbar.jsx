@@ -14,8 +14,8 @@ const link = [
     },
     {
         id: 2,
-        title: 'Portfolio',
-        url: '/portfolio',
+        title: 'Projects',
+        url: '/projects',
     },
     {
         id: 3,
@@ -51,11 +51,11 @@ function Navbar() {
                         {link.title}
                     </Link>
                 ))}
-                {/* {
+                {
                     session.status === 'authenticated' && (
                         <button className={styles.logout} onClick={signOut}>Logout</button>
                     )
-                } */}
+                }
             </div>
         </div>
     )
