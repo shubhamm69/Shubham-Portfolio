@@ -1,0 +1,34 @@
+.tilt {
+    width: 250px;
+}
+
+.gradientShadow {
+    padding: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contentContainer {
+    border: 5px solid;
+    border-image: linear-gradient(to right, #53c28b, #fa7bfa);
+    border-image-slice: 1;
+    border-radius: 20px;
+    padding: 20px 12px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icon {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}

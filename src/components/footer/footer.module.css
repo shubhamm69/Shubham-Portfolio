@@ -1,9 +1,24 @@
 .container {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    height: auto;
+    padding: 20px;
+}
 
+.contactInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contactDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contactItem {
+    font-size: 14px;
 }
 
 .social {
@@ -11,7 +26,14 @@
     align-items: center;
     gap: 10px;
 }
-.icon{
+
+.icon {
     opacity: 0.9;
     cursor: pointer;
+}
+
+.designedBy {
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0.8;
 }

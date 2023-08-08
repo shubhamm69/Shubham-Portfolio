@@ -1,7 +1,8 @@
 .container {
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
+    height: 80vh;
 }
 
 .item {
@@ -39,4 +40,17 @@
 .desc {
     font-size: 22px;
     font-weight: 300;
+}
+
+
+.serviceCards {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+
+.expContainer{
+    display: flex;
+    align-items: center;
 }

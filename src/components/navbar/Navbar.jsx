@@ -5,39 +5,8 @@ import React from 'react'
 import styles from './navbar.module.css'
 import DarkModeToggle from '../DarkModeToggle/DarkModeToggle';
 import { signOut, useSession } from 'next-auth/react';
+import { link } from '../../app/constants/constants'
 
-const link = [
-    {
-        id: 1,
-        title: 'Home',
-        url: '/',
-    },
-    {
-        id: 2,
-        title: 'Projects',
-        url: '/projects',
-    },
-    {
-        id: 3,
-        title: 'Blog',
-        url: '/blog',
-    },
-    {
-        id: 4,
-        title: 'About',
-        url: '/about',
-    },
-    {
-        id: 5,
-        title: 'Contact',
-        url: '/contact',
-    },
-    // {
-    //     id: 6,
-    //     title: 'Dashboard',
-    //     url: '/dashboard',
-    // }
-]
 function Navbar() {
     const session = useSession();
 

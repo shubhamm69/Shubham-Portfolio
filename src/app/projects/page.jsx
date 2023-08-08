@@ -5,7 +5,6 @@ import Link from 'next/link'
 function projects() {
     return (
         <div className={styles.container}>
-            <h1 className={styles.selectTitle}>Select a project</h1>
             <div className={styles.items}>
                 <Link href="/projects/designs" className={styles.item} >
                     <span className={styles.itemTitle}>Design</span> 
