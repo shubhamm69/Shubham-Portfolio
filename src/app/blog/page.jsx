@@ -1,11 +1,11 @@
-"use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styles from "./page.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
 async function getData() {
-  const res = await fetch("https://shubham19-portfolio.vercel.app/api/posts", {
+  const res = await fetch("https://shubham19-portfolio.vercel.app/api/posts", {  //deployment
+  // const res = await fetch("http://localhost:3000/api/posts", {  //local host
     cache: "no-store",
   });
 
@@ -16,33 +16,15 @@ async function getData() {
   return res.json();
 }
 
-const Blog = () => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const blogData = await getData();
-        setData(blogData);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  if (!data || data.length === 0) {
-    return <div>No blog posts available.</div>;
-  }
-
+const Blog = async () => {
+  const data = await getData();
   return (
     <div className={styles.mainContainer}>
       {data.map((item) => (
         <Link href={`/blog/${item._id}`} className={styles.container} key={item.id}>
           <div className={styles.imageContainer}>
             <Image
-              src={item.image}
+              src={item.img}
               alt=""
               width={400}
               height={250}

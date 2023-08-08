@@ -1,23 +1,30 @@
-.container{
+/* page.module.css */
+.container {
     display: flex;
     align-items: center;
     gap: 50px;
-    margin-bottom: 50px;   
+    margin-bottom: 50px;
 }
 
-.img{
+.imageContainer {
+    flex-shrink: 0;
+}
+
+.image {
+    width: 400px;
+    height: 250px;
     object-fit: cover;
 }
 
-.content{
-
+.content {
+    flex-grow: 1;
 }
 
-.title{
+.title {
     margin-bottom: 10px;
+    font-size: 24px;
 }
 
-.desc{
+.desc {
     font-size: 19px;
-    color: #999;
 }
