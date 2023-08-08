@@ -5,7 +5,6 @@ import Button from '@/components/button/Button';
 import ServiceCard from '@/components/ServiceCard/page';
 import { services } from './constants/constants';
 
-
 export default function Home() {
   return (
     <div>
@@ -22,7 +21,6 @@ export default function Home() {
         </div>
       </div>
 
-
       <div className={styles.container}>
         <div className={styles.item}>
           <h1 className={styles.title}>
@@ -31,12 +29,11 @@ export default function Home() {
           <p className={styles.desc}>I am a Web and Mobile app development specialist with a passion for crafting user-friendly applications that deliver exceptional experiences. My expertise lies in building dynamic web platforms and cutting-edge mobile applications.</p>
           <div className={styles.serviceCards}>
             {services.map((service, index) => (
-              <ServiceCard key={service.title} index={index} {...service} />
+              <ServiceCard key={service.title} index={index} {...service} className={styles.serviceCard} />
             ))}
           </div>
         </div>
       </div>
-
     </div>
   );
 }

@@ -1,5 +1,7 @@
 .tilt {
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
 }
 
 .gradientShadow {
@@ -12,7 +14,7 @@
     border-image: linear-gradient(to right, #53c28b, #fa7bfa);
     border-image-slice: 1;
     border-radius: 20px;
-    padding: 20px 12px;
+    padding: 15px;
     min-height: 280px;
     display: flex;
     flex-direction: column;
@@ -20,15 +22,31 @@
     align-items: center;
 }
 
-
 .icon {
-    width: 64px;
-    height: 64px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
 }
 
 .title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
+}
+
+/* Media Queries for Responsive Styles */
+
+@media (max-width: 768px) {
+    .contentContainer {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .icon {
+        width: 30px; /* Decrease icon size for smaller screens */
+        height: 30px;
+    }
+
+    .title {
+        font-size: 16px; /* Slightly smaller font size for smaller screens */
+    }
 }
