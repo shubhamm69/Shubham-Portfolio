@@ -1,4 +1,4 @@
-.container{
+.container {
     padding: 20px 20px;
     border-radius: 5px;
     background: #53c28b;
@@ -8,4 +8,20 @@
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 18px 22px;
+        font-size: 17px;
+    }
 }

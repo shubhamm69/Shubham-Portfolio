@@ -37,3 +37,37 @@
     text-align: center;
     opacity: 0.8;
 }
+
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    .contactInfo {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contactDetails {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .designedBy {
+        margin-top: 10px;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+    .contactInfo {
+        gap: 15px;
+    }
+
+    .contactItem {
+        font-size: 16px;
+    }
+}

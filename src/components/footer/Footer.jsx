@@ -11,7 +11,7 @@ function Footer() {
                         ☎️ +91 9205727966
                     </div>
                     <div className={styles.contactItem}>
-                        📨 outoftheboxshubham@gmail.com
+                        📨 shubham212a@gmail.com
                     </div>
                     <div className={styles.contactItem}>
                         📍 Delhi, India

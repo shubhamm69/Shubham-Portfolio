@@ -63,3 +63,67 @@
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
+
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    .imgContainer {
+        height: 200px;
+    }
+
+    .imgText {
+        bottom: 10px;
+        left: 10px;
+        padding: 3px 6px;
+        font-size: 12px;
+    }
+
+    .item {
+        flex: none;
+    }
+
+    .textContainer {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .desc {
+        font-size: 16px;
+    }
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+    .imgContainer {
+        height: 250px;
+    }
+
+    .imgText {
+        bottom: 15px;
+        left: 15px;
+        padding: 4px 8px;
+        font-size: 14px;
+    }
+
+    .textContainer {
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    .item {
+        gap: 15px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .desc {
+        font-size: 18px;
+    }
+}

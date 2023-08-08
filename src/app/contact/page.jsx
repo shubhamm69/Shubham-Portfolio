@@ -1,16 +1,12 @@
-import React from 'react'
-import styles from './page.module.css'
-import Image from 'next/image'
-import Button from '@/components/button/Button'
+import React from 'react';
+import styles from './page.module.css';
+import Image from 'next/image';
+import Button from '@/components/button/Button';
 
-export const metadata = {
-    title: 'Shubham | Contact page',
-    description: 'Contact me page for shubham',
-}  
 function Contact() {
     return (
         <div className={styles.container}>
-            <h1 className={styles.title}>Lets Connect?</h1>
+            <h1 className={styles.title}>{`Let's Connect?`}</h1>
             <div className={styles.content}>
                 <div className={styles.imgContainer}>
                     <Image className={styles.image} src="/contact.png" alt="" fill={true} />
@@ -23,7 +19,7 @@ function Contact() {
                 </form>
             </div>
         </div>
-    )
+    );
 }
 
-export default Contact
+export default Contact;
