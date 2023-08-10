@@ -2,8 +2,7 @@ import React from 'react';
 import styles from './page.module.css';
 import Button from '@/components/button/Button';
 import Image from 'next/image';
-import { items } from './data.js';
-
+import { projects as items } from '@/constants/constants';
 const getData = (cat) => {
     const data = items[cat];
     return data || [];
