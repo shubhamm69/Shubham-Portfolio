@@ -4,7 +4,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 async function getData(id) {
-  const res = await fetch(`https://shubham19-portfolio.vercel.app/api/posts/${id}`, { //deployment
+  const res = await fetch(`https://shubham19.vercel.app/api/posts/${id}`, { //deployment
   // const res = await fetch(`http://localhost:3000/api/posts/${id}`, { //local host
     cache: "no-store",
   });
