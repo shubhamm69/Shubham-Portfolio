@@ -34,9 +34,37 @@
     text-align: center;
 }
 
+.descheading {
+    font-size: 22px;
+    font-weight: 300;
+}
+.titleheading {
+    font-size: 70px;
+    background: linear-gradient(to bottom, #194c33, #bbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.serviceCards {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 /* Media Queries for Responsive Styles */
 
 @media (max-width: 768px) {
+    .titleheading {
+        font-size: 36px;
+    }
+
+    .descheading {
+        font-size: 18px;
+    }
+
     .contentContainer {
         padding: 10px; /* Reduce padding for smaller screens */
     }
@@ -49,4 +77,13 @@
     .title {
         font-size: 16px; /* Slightly smaller font size for smaller screens */
     }
+
+    .serviceCard {
+        width: 100%;
+        /* Full width for mobile screens */
+        padding: 15px;
+        /* Add padding to the card */
+    }
 }
+
+

@@ -1,7 +1,6 @@
 .container {
     display: flex;
     align-items: center;
-    gap: 50px;
     height: 80vh;
 }
 
@@ -13,7 +12,7 @@
 }
 
 .title {
-    font-size: 72px;
+    font-size: 70px;
     background: linear-gradient(to bottom, #194c33, #bbb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -30,6 +29,7 @@
     from {
         transform: translateY(-10px);
     }
+
     to {
         transform: translateY(10px);
     }
@@ -42,6 +42,7 @@
 
 .serviceCards {
     margin-top: 20px;
+    margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -55,37 +56,45 @@
 /* Media Queries for Mobile and Tablets */
 
 @media (max-width: 768px) {
+
     /* Adjust container and item layout for smaller screens */
     .container {
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .item {
-        width: 100%; /* Full width for smaller screens */
+        width: 100%;
+        /* Full width for smaller screens */
+        gap: 20px;
+        text-align: center;
+        /* Center align text */
     }
-    
+
     /* Adjust font sizes for smaller screens */
     .title {
         font-size: 36px;
     }
-    
+
     .img {
-        height: auto; /* Let the image resize proportionally */
+        height: auto;
+        /* Let the image resize proportionally */
     }
-    
+
     .desc {
         font-size: 18px;
     }
-    
+
     /* Adjust serviceCards layout */
     .serviceCards {
         gap: 15px;
     }
-    
+
     /* Adjust serviceCard width for smaller screens */
     .serviceCard {
-        width: 100px; /* Full width for mobile screens */
-        padding: 15px; /* Add padding to the card */
+        width: 100%;
+        /* Full width for mobile screens */
+        padding: 15px;
+        /* Add padding to the card */
     }
 }
