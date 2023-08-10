@@ -3,9 +3,9 @@
 import Link from 'next/link'
 import React from 'react'
 import styles from './navbar.module.css'
-import DarkModeToggle from '../darkModeToggle/DarkModeToggle';
 import { signOut, useSession } from 'next-auth/react';
 import { link } from '../../constants/constants'
+import DarkModeToggle from '../darkModeToggle/DarkModeToggle';
 
 function Navbar() {
     const session = useSession();

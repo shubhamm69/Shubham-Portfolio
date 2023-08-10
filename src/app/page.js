@@ -2,8 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './page.module.css';
 import Button from '@/components/button/Button';
-import ExperienceTimeline from '@/components/experienceTimeline/ExperienceTimeline';
 import Services from '@/components/services/Services';
+import ExperienceTimeline from '@/components/experienceTimeline/ExperienceTimeline';
 
 export default function Home() {
   return (
