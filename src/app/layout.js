@@ -4,6 +4,8 @@ import "./globals.css"
 import { Inter, Roboto, Poppins } from 'next/font/google'
 import { ThemeProvider } from "@/context/ThemeContext";
 import AuthProvider from "@/components/AuthProvider/AuthProvider";
+// import Image from "next/image";
+// import styles from "./layout.module.css";
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
