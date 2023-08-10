@@ -4,7 +4,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import Image from "next/image";
 import { experiences } from "@/constants/constants";
-import styles from './experienceTimeline.module.css';
+import styles from './ExperienceTimeline.module.css';
 import {motion} from "framer-motion";
 import { textVariant } from "@/utils/motion";
 import { SectionWrapper } from "../hoc/hoc";
