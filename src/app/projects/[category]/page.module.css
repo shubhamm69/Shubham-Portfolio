@@ -1,42 +1,95 @@
-.container{   
+/* page.module.css */
+
+.container {
+    /* Add responsive container styles */
+    padding: 0 20px;
 }
 
-.catTitle{
+.catTitle {
     color: #53c28b;
+    font-size: 36px;
+    text-align: center;
 }
 
-.item{
+.item {
+    /* Add responsive item styles */
     display: flex;
+    flex-direction: column;
     gap: 50px;
     margin-top: 50px;
     margin-bottom: 100px;
 }
 
-.imgContainer{
-    flex:1;
-    height: 500px;
-    position: relative;
+.oddItem {
+    flex-direction: row;
 }
 
-.img{
+.evenItem {
+    flex-direction: row-reverse;
+}
+
+.imgContainer {
+    /* Adjust image container styles */
+    flex: 1;
+    position: relative;
+    height: 300px; /* Adjust height for responsiveness */
+    overflow: hidden;
+}
+
+.img {
+    /* Adjust image styles */
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
-.content{
-    flex:1;
+
+.content {
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    justify-items: center;
+    align-items: center; /* Center content horizontally */
 }
 
-.item:nth-child(2n+1){
-    flex-direction: row-reverse; 
-}
-.title{
-    font-size: 50px;
+.title {
+    font-size: 32px; /* Adjust font size for smaller screens */
+    text-align: center;
 }
 
-.desc{
-    font-size: 20px;
+.desc {
+    font-size: 18px; /* Adjust font size for smaller screens */
     line-height: 1.5;
+    text-align: center;
+}
+
+.buttonContainer {
+    /* Center the button */
+    display: flex;
+    justify-content: center;
+}
+
+/* Media query for smaller screens (e.g., phone screens) */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Adjust container padding for smaller screens */
+    }
+
+    .item {
+        flex-direction: column; /* Always stack content in mobile view */
+        gap: 20px; /* Reduce gap for smaller screens */
+        margin-top: 20px; /* Adjust top margin for smaller screens */
+        margin-bottom: 50px; /* Adjust bottom margin for smaller screens */
+    }
+
+    .imgContainer {
+        height: 200px; /* Adjust image container height for smaller screens */
+    }
+
+    .title {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .desc {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
 }

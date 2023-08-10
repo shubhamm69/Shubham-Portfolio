@@ -17,7 +17,7 @@
     "eslint-config-next": "13.4.12",
     "framer-motion": "^10.15.1",
     "mongoose": "^7.4.2",
-    "next": "13.4.12",
+    "next": "^13.4.13",
     "next-auth": "^4.22.3",
     "pnpm": "^8.6.11",
     "postcss": "^8.4.27",
