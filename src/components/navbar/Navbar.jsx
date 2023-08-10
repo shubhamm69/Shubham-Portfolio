@@ -5,7 +5,7 @@ import React from 'react'
 import styles from './navbar.module.css'
 import { signOut, useSession } from 'next-auth/react';
 import { link } from '../../constants/constants'
-import DarkModeToggle from '../darkModeToggle/DarkModeToggle';
+import DarkModeToggle from '../DarkModeToggle/DarkModeToggle';
 
 function Navbar() {
     const session = useSession();

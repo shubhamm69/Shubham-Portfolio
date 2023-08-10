@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from './page.module.css';
 import Button from '@/components/button/Button';
 import Services from '@/components/services/Services';
-import ExperienceTimeline from '@/components/experienceTimeline/ExperienceTimeline';
+import ExperienceTimeline from '@/components/ExperienceTimeline/ExperienceTimeline';
 
 export default function Home() {
   return (
