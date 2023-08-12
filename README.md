@@ -7,7 +7,7 @@ This repository contains the source code for my personal portfolio site, built u
 ## Features
 
 - **Next.js**: Utilizes the Next.js framework to create a fast, server-side rendered React application with built-in routing and other powerful features.
-- **MongoDB**: Uses MongoDB as the database server to store and manage data related to projects and other portfolio information.
+- **MongoDB**: Uses MongoDB as the database server to store and manage data related to blogs and other portfolio information.
 - **Responsive Design**: Ensures the site is accessible and looks great on various devices, including desktops, tablets, and mobile phones.
 - **Project Showcase**: Displays a curated list of projects, including descriptions, technologies used, and links to the live projects or repositories.
 - **Skills & Experience**: Highlights my skills and professional experience to showcase my expertise and achievements.
